@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 
-mongoose.connect('mongodb+srv://mujju:muzamil786.@cluster0.e8aay.mongodb.net/myFirstDatabase?retryWrites=true&w=majority',(err,res)=>{
+mongoose.connect(process.env.MONGODB_URI,(err,res)=>{
     if(err){
        return console.log({err});
     }

@@ -8,8 +8,8 @@ function App() {
   return (
     <>
     <BrowserRouter>
-    <Container maxW='8xl'>
       <Header />
+    <Container maxW='7xl'>
       <Router />
     </Container>
     </BrowserRouter>

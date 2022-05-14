@@ -3,7 +3,8 @@ const app = express();
 const port = 4000;
 const bodyParser = require('body-parser');
 const adminAuth = require('./routes/adminAuth')
-const mongoose = require('./db')
+require('dotenv').config()
+require('./db')
 const cors = require('cors')
 //use app
 app.use(cors())
