@@ -50,7 +50,7 @@ export default function CourseDialog({date,setDate,setOpenDialogue,openDialogue,
           >
             Close
           </Button>
-          <Button variant="ghost" onClick={handleSaveClick}>
+          <Button colorScheme={'green'} onClick={handleSaveClick}>
             {type}
           </Button>
         </ModalFooter>

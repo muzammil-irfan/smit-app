@@ -13,7 +13,7 @@ router.post("/signup", async (req, res) => {
   } catch (err) {
     console.log(err);
     res.status(400).json({ err });
-  }
+  } 
 });
 router.post("/login", async (req, res) => {
   const { email, password } = req.body;

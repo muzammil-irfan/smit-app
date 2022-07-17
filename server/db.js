@@ -1,6 +1,7 @@
 const mongoose = require('mongoose');
-
-mongoose.connect(process.env.MONGODB_URI,(err,res)=>{
+const MONGODB_URI = process.env.MONGODB_URI;
+// console.log()
+mongoose.connect(MONGODB_URI,(err,res)=>{
     if(err){
        return console.log({err});
     }
